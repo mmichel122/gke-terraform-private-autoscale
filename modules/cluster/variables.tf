@@ -1,0 +1,14 @@
+variable "project_id" {}
+variable "cluster_name" {}
+variable "location" {}
+variable "network_name" {}
+variable "subnetwork_name" {}
+variable "min_master_version" {}
+variable "system_nodes_size" {}
+variable "worker_nodes_size" {}
+variable "autoscale_min_nodes" {}
+variable "autoscale_max_nodes" {}
+variable "secondary_ip_range_pods" {}
+variable "secondary_ip_range_services" {}
+variable "system_service_account" {}
+variable "worker_service_account" {}

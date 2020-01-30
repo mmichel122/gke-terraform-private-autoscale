@@ -1,0 +1,15 @@
+project_id                  = "skyuk-cec-automation-platform"
+cluster_name                = "automation-cluster"
+region                      = "europe-west2"
+location                    = "europe-west2-c"
+system_nodes_size           = "g1-small"
+worker_nodes_size           = "n2-standard-2"
+autoscale_min_nodes         = 0
+autoscale_max_nodes         = 1
+min_master_version          = "1.15.7-gke.23"
+network_name                = "cluster-vpc"
+ip_range_nodes              = "192.168.0.0/16"
+secondary_ip_range_pods     = "10.0.0.0/8"
+secondary_ip_range_services = "10.0.32.0/16"
+subnets_count               = "1"
+worker_service_account      = "cec-automation-read-only@skyuk-cec-automation-platform.iam.gserviceaccount.com"
